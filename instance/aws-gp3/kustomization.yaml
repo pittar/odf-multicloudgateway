@@ -1,0 +1,11 @@
+resources:
+  - ../../base
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/multiCloudGateway/dbStorageClassName
+        value: gp3-csi
+    target:
+      kind: StorageCluster
+      name: ocs-storagecluster

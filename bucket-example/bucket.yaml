@@ -1,0 +1,9 @@
+apiVersion: objectbucket.io/v1alpha1
+kind: ObjectBucketClaim
+metadata:
+  name: mybucket
+spec:
+  additionalConfig:
+    bucketclass: noobaa-default-bucket-class
+  bucketName: mybucket
+  storageClassName: openshift-storage.noobaa.io
